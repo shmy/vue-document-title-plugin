@@ -2,7 +2,8 @@
 [![npm](https://img.shields.io/npm/v/vue-document-title-plugin.svg?style=flat-square)](https://www.npmjs.com/package/vue-document-title-plugin)
 [![npm](https://img.shields.io/npm/dt/vue-document-title-plugin.svg?style=flat-square)](https://www.npmjs.com/package/vue-document-title-plugin)
 [![license](https://img.shields.io/github/license/shmy/vue-document-title-plugin.svg?style=flat-square)](https://github.com/shmy/vue-document-title-plugin/blob/master/LICENSE.md)
-[![GitHub stars](https://img.shields.io/github/stars/shmy/vue-document-title-plugin.svg?style=social&label=Star)](https://github.com/shmy/vue-document-title-plugin)
+[![GitHub stars](https://img.shields.io/github/stars/shmy/vue-document-title-plugin.svg?style=social&label=Star)](https://github.com/shmy/vue-document-title-plugin)  
+
 ### **Installation**  
 + via **CDN**  
 ``` html
@@ -29,5 +30,5 @@ $ yarn add vue-document-title-plugin
        meta: { title: "首页" } // 导航到这个路由document.title会变成 首页【网站名称】
     }]
   });
-  Vue.use(documentTitle, router, { defTitle: "【网站名称】", filter: title => `${title}【网站名称】` });
+  Vue.use(vueDocumentTitlePlugin, router, { defTitle: "【网站名称】", filter: title => `${title}【网站名称】` });
 ```
