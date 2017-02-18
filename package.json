@@ -2,8 +2,19 @@
   "name": "vue-document-title-plugin",
   "version": "1.0.0",
   "main": "dist/vue-document-title-plugin.common.js",
-  "repository": {},
+  "description": "vue-router plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shmy/vue-document-title-plugin"
+  },
+  "keywords": [
+    "vue",
+    "vue-router",
+    "document title"
+  ],
+  "author": "shmy",
   "license": "MIT",
+  "unpkg": "dist/vue-document-title-plugin.min.js",
   "scripts": {
     "build": "bili"
   },
