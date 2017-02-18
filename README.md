@@ -1,7 +1,20 @@
-### 支持vue-router导航切换document.title
+**支持vue-router(version >= 2.0)导航切换更改document.title**  
+[![npm](https://img.shields.io/npm/v/vue-document-title-plugin.svg?style=flat-square)](https://www.npmjs.com/package/vue-document-title-plugin)
+[![npm](https://img.shields.io/npm/dt/vue-document-title-plugin.svg?style=flat-square)](https://www.npmjs.com/package/vue-document-title-plugin)
+[![license](https://img.shields.io/github/license/shmy/vue-document-title-plugin.svg?style=flat-square)](https://github.com/shmy/vue-document-title-plugin/blob/master/LICENSE.md)
+[![GitHub stars](https://img.shields.io/github/stars/shmy/vue-document-title-plugin.svg?style=social&label=Star)](https://github.com/shmy/vue-document-title-plugin)
+### **Installation**  
++ via **CDN**  
+``` html
+  <script src="https://unpkg.com/vue-document-title-plugin/dist/vue-document-title-plugin.min.js"></script>
+```  
++ via **NPM**  
 ```bash
-$ npm install vue-document-title-plugin
+$ npm install vue-document-title-plugin --save
 ```
+
+### Demo
+
 ```javascript
   // main.js
   import vue from "vue";

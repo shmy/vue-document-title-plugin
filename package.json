@@ -1,6 +1,6 @@
 {
   "name": "vue-document-title-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/vue-document-title-plugin.common.js",
   "description": "vue-router plugin",
   "repository": {
