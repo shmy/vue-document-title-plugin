@@ -1,0 +1,18 @@
+{
+  "name": "vue-document-title-plugin",
+  "version": "1.0.0",
+  "main": "dist/vue-document-title-plugin.common.js",
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "build": "bili"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "bili": "^0.14.0",
+    "eslint": "^3.15.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.2",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}
