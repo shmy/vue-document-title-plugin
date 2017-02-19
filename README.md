@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/github/license/shmy/vue-document-title-plugin.svg?style=flat-square)](https://github.com/shmy/vue-document-title-plugin/blob/master/LICENSE.md)
 [![GitHub stars](https://img.shields.io/github/stars/shmy/vue-document-title-plugin.svg?style=social&label=Star)](https://github.com/shmy/vue-document-title-plugin)  
 ### **Features**  
-- 支持ios微信客户端的无效的bug. 参考自:[http://blog.csdn.net/xuexiiphone/article/details/51966342][1]
+- 支持ios微信客户端的无效的bug. 参考自:[http://blog.csdn.net/xuexiiphone/article/details/51966342][1]  
 ### **Installation**  
 + via **CDN**  
 ``` html
