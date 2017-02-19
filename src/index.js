@@ -16,7 +16,7 @@ export default {
     let filter = options.filter;
     let defTitle = options.defTitle || "";
     router.afterEach(route => {
-      let title = route.meta.title;
+      let title = route.meta && route.meta.title;
       (title && filter) && (title = filter(title));
       setTile(title || defTitle);
     });

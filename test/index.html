@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <script src="../dist/vue-document-title-plugin.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <button @click="change">change title</button>
+    <button @click="get">get title</button>
+    <router-view></router-view>
+  </div>
+  <template id="index">
+    <div>
+      <h1>this is index page</h1>
+      <router-link to="/list">go to list</router-link>
+    </div>
+  </template>
+  <template id="list">
+    <div>
+      <h1>this is list page</h1>
+      <router-link to="/">go to index</router-link>
+    </div>
+  </template>
+  <script>
+    Vue.use(VueRouter);
+    var router = new VueRouter({
+      routes: [{
+        path: "/",
+        component: { template: "#index" },
+        meta: { title: "首页" }
+      }, {
+        path: "/list",
+        component: { template: "#list" },
+        meta: { title: "列表页" }
+      }]
+    });
+    Vue.use(vueDocumentTitlePlugin, router, { filter: function (title) { return title + "[balabala]" } });
+    new Vue({
+      el: "#app",
+      router,
+      methods: {
+        change: function () {
+          this.$doc.title = "xxxx";
+        },
+        get: function () {
+          alert(this.$doc.title);
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

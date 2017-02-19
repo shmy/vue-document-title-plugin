@@ -20,7 +20,7 @@ var index = {
     var filter = options.filter;
     var defTitle = options.defTitle || "";
     router.afterEach(function (route) {
-      var title = route.meta.title;
+      var title = route.meta && route.meta.title;
       (title && filter) && (title = filter(title));
       setTile(title || defTitle);
     });
