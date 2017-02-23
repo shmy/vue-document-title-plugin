@@ -6,7 +6,11 @@ const setTile = title => {
   if (!!isIosWechatClient === true) {
     const iframe = document.createElement("iframe");
     iframe.style.display = "none";
-    iframe.addEventListener("load", () => document.body.removeChild(iframe));
+    iframe.addEventListener("load", () => {
+      setTimeout(() => {
+        document.body.removeChild(iframe);
+      }, 9);
+    }, false);
     iframe.src = "/favicon.ico";
     document.body.appendChild(iframe);
   }

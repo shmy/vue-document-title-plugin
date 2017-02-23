@@ -8,7 +8,11 @@ var setTile = function (title) {
   if (!!isIosWechatClient === true) {
     var iframe = document.createElement("iframe");
     iframe.style.display = "none";
-    iframe.addEventListener("load", function () { return document.body.removeChild(iframe); });
+    iframe.addEventListener("load", function () {
+      setTimeout(function () {
+        document.body.removeChild(iframe);
+      }, 9);
+    }, false);
     iframe.src = "/favicon.ico";
     document.body.appendChild(iframe);
   }
